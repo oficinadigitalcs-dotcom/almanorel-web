@@ -1,0 +1,64 @@
+/* Cuentos para Imaginar — estilos (sin fuentes externas) */
+:root{
+  --bg:#fdf8f1; --card:#ffffff; --ink:#3d3a35; --muted:#6b655c;
+  --sage:#7fa58a; --sage-soft:#e6f0e8; --peach:#f4c9a8; --peach-soft:#fcebdc;
+  --sky:#dcebf2; --accent:#3f6b4f; --radius:18px;
+  --font:"Nunito","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-title:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.65}
+img,svg{max-width:100%;display:block}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:#2c4d38}
+:focus-visible{outline:3px solid #2c4d38;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:0 0 10px 0;z-index:10}
+.skip:focus{left:0}
+.wrap{width:100%;max-width:960px;margin:0 auto;padding:0 1.25rem}
+
+/* Cabecera */
+.site-header{background:linear-gradient(180deg,var(--sky) 0%,var(--bg) 100%);text-align:center;padding:2.25rem 0 1rem}
+.brand-kicker{margin:0;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.site-header h1{font-family:var(--font-title);font-weight:normal;font-size:clamp(2rem,8vw,3.4rem);line-height:1.15;margin:.35rem 0 .5rem;color:var(--accent)}
+.tagline{margin:0 auto;max-width:34rem;color:var(--muted)}
+.hero-art{margin:1.25rem auto 0;max-width:520px;width:100%;height:auto}
+nav.toc{margin-top:1.25rem}
+nav.toc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center}
+nav.toc a{display:inline-block;padding:.45rem .9rem;background:var(--card);border:1px solid #e8e0d4;border-radius:999px;text-decoration:none;font-size:.95rem;color:var(--ink)}
+nav.toc a:hover{background:var(--sage-soft)}
+
+/* Secciones */
+main section{margin:1.5rem 0}
+.card{background:var(--card);border-radius:var(--radius);padding:1.5rem 1.35rem;box-shadow:0 2px 0 #efe7db,0 8px 24px rgba(61,58,53,.05)}
+h2{font-family:var(--font-title);font-weight:normal;font-size:clamp(1.5rem,5.5vw,2rem);line-height:1.25;margin:0 0 .75rem;color:var(--accent)}
+.values{list-style:none;padding:0;margin:1rem 0 0;display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.values li{background:var(--sage-soft);border-radius:12px;padding:.65rem .8rem;font-weight:600;font-size:.98rem}
+.values li span{display:block;font-weight:400;font-size:.88rem;color:var(--muted)}
+.meta{color:var(--muted);font-size:.95rem}
+.badge{display:inline-block;background:var(--peach-soft);color:#7a4a25;border:1px solid var(--peach);border-radius:999px;padding:.2rem .75rem;font-size:.85rem;font-weight:700;letter-spacing:.02em;margin-bottom:.6rem}
+.book{display:grid;gap:1.25rem}
+.book-cover{background:var(--peach-soft);border-radius:14px;padding:1rem;max-width:280px;margin:0 auto;width:100%}
+.book-cover svg{width:100%;height:auto}
+.buttons{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.btn-soon{display:inline-block;padding:.7rem 1.1rem;border-radius:12px;background:#f1ece4;color:var(--muted);font-weight:700;border:1px dashed #cfc5b6}
+.soft{background:var(--sage-soft)}
+.contact{text-align:center}
+.contact a{font-weight:700;font-size:1.1rem}
+
+/* Pie */
+.site-footer{margin-top:2.5rem;padding:1.75rem 0 2.25rem;border-top:1px solid #ebe3d7;color:var(--muted);font-size:.9rem;text-align:center}
+.site-footer p{margin:.35rem 0}
+
+/* Escritorio */
+@media (min-width:760px){
+  body{font-size:1.1rem}
+  .site-header{padding-top:3rem}
+  .card{padding:2rem 2.25rem}
+  .values{grid-template-columns:repeat(4,1fr)}
+  .book{grid-template-columns:240px 1fr;align-items:center}
+  .book-cover{margin:0}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+  .two-col section{margin:0}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
