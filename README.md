@@ -13,6 +13,7 @@ propio **almanorel.com**.
 ├── 404.html            → página de error
 ├── assets/style.css    → estilos (fuentes del sistema, nada de terceros)
 ├── assets/favicon.svg
+├── assets/img/         → ilustraciones (webp + jpg; versiones -800/-480 más ligeras para móvil)
 ├── CNAME               → contiene exactamente: almanorel.com
 ├── .nojekyll           → indica a GitHub Pages que no procese con Jekyll
 └── preview-*.png       → capturas de vista previa (se pueden borrar antes de publicar)
@@ -77,10 +78,17 @@ Notas:
 
 ## Pendientes
 
-- Añadir los botones "Comprar en Amazon" y "Leer en Kindle" en `cuentos/index.html`
-  (hay comentarios HTML marcando el lugar exacto).
-- Añadir el enlace a Amazon de "Navidad para imaginar" en su sección cuando esté publicado (sin PDF ni dibujos sueltos).
+- Añadir los botones "Comprar en Amazon" y "Leer en Kindle" en la tarjeta de
+  "Ardi y la casita secreta" (`cuentos/index.html`, hay comentarios HTML marcando el lugar
+  exacto) y cambiar entonces la etiqueta "En preparación".
+- "Navidad para imaginar" (actividades para colorear) está marcada "En preparación": añadir
+  su enlace cuando esté listo (hay un comentario HTML en su sección). Sin PDF ni dibujos sueltos.
 - No subir PDFs de los libros a esta web.
+- Si se cambian las ilustraciones, regenerar también las versiones reducidas
+  (`ardi-banner-800`, `animales-banner-800`, `ardi-vertical-480`, `libro-vertical-480`, en
+  .webp y .jpg) y mantener los nombres; `og:image` apunta a
+  `https://almanorel.com/assets/img/ardi-banner.jpg`.
+- Borrar `preview-mobile.png` y `preview-desktop.png` antes de publicar (opcional).
 
 ## Privacidad
 
