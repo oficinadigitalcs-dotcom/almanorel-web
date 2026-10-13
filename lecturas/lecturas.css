@@ -29,3 +29,8 @@
 .breadcrumbs{margin:1rem 0;color:var(--muted);font-size:.95rem}
 .source-note{font-size:.9rem;color:var(--muted)}
 @media(min-width:760px){.reading-grid{grid-template-columns:1fr 1fr}.reading-page .review-book{grid-template-columns:230px 1fr}.reading-grid .card:last-child:nth-child(odd){grid-column:1/-1}}
+.buy-buttons{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.25rem;margin:1.25rem 0 .5rem}
+.btn-secondary{display:inline-block;padding:.55rem 1.1rem;border:1.5px solid var(--green);border-radius:999px;color:var(--green);font-weight:700;font-size:.95rem;text-decoration:none;background:transparent}
+.btn-secondary:hover,.btn-secondary:focus-visible{background:var(--green-soft)}
+.buy-small{font-size:.9rem;color:var(--muted);margin:.25rem 0 0}
+.paper-note{margin:1.25rem 0 0;padding:.9rem 1.1rem;border-left:4px solid var(--terra);background:var(--bg-2);border-radius:10px;font-style:italic}
