@@ -119,3 +119,8 @@ main p{margin:0 0 .9rem}
 html{scroll-behavior:smooth}
 #los-cuentos{scroll-margin-top:1rem}
 .btn.go::after{content:" →"}
+.doors{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;padding:.7rem 1rem;background:var(--green-deep,#1f4a2b)}
+.doors a{display:inline-block;padding:.45rem 1.1rem;border-radius:999px;background:#fff;color:var(--green,#2F6B3F);font-weight:800;text-decoration:none}
+.doors a:hover,.doors a:focus-visible{background:var(--terra-dark,#A9452E);color:#fff}
+.doors-home{background:none;gap:1rem;margin-top:1.5rem}
+.doors-home a{padding:1rem 1.8rem;font-size:1.15rem;border:2px solid var(--green,#2F6B3F)}
