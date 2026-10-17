@@ -92,5 +92,4 @@ Notas:
 
 ## Privacidad
 
-La web no usa cookies, formularios, analíticas, rastreadores ni fuentes externas.
-No recoge ningún dato personal.
+La web usa GoatCounter, una estadística de visitas sin cookies que no recoge datos personales ni rastrea a nadie entre webs. No usa formularios.

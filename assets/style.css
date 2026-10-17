@@ -93,6 +93,9 @@ main p{margin:0 0 .9rem}
 .site-footer{margin-top:3rem;padding:2rem 0 2.5rem;background:var(--bg-2);border-top:4px solid var(--green);color:var(--muted);font-size:.9rem;text-align:center}
 .site-footer p{margin:.4rem 0}
 .site-footer strong{color:var(--green)}
+.footer-social{display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;margin:.95rem 0 .15rem;padding:0;list-style:none}
+.footer-social a{display:inline-block;padding:.65rem 1rem;background:var(--card);border:2px solid var(--green);border-radius:999px;text-decoration:none;font-weight:700;color:var(--green)}
+.footer-social a:hover{background:var(--green);color:#fff}
 
 /* Escritorio */
 @media (min-width:600px){
