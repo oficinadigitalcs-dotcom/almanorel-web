@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Tarjeta ilustrativa de Alma Norel para No todos los ricos son ricos, de Fran de Olza">
+<title>Tarjeta ilustrativa de Alma Norel: No todos los ricos son ricos (Fran de Olza). No es la portada oficial del libro.</title>
+<rect width="600" height="800" fill="#FFF6E5"/>
+<rect x="24" y="24" width="552" height="752" rx="28" fill="#DDF0EC" stroke="#EADFC8" stroke-width="3"/>
+<text x="300" y="70" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="3" fill="#C8553D">ALMA NOREL · RUTA DE LECTURA</text>
+<text x="300" y="120" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-size="50" font-weight="700" fill="#245732">No todos los</text><text x="300" y="178" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-size="50" font-weight="700" fill="#245732">ricos son ricos</text>
+<text x="300" y="246" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-style="italic" font-size="28" fill="#5E574D">Fran de Olza</text>
+<g transform="translate(0,40)"><rect x="90" y="430" width="420" height="4" fill="#3E8C7E"/><polygon points="300,330 360,430 240,430" fill="#FFFBF3" stroke="#3E8C7E" stroke-width="4"/><polygon points="240,434 360,434 430,520 300,590 170,520" fill="#3E8C7E" opacity=".35"/><text x="300" y="318" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="20" fill="#5E574D">lo que se ve</text><text x="300" y="530" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="20" fill="#1F5130">lo que hay</text></g>
+<rect x="60" y="690" width="480" height="56" rx="16" fill="#FFFBF3" stroke="#EADFC8"/>
+<text x="300" y="714" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="17" font-weight="700" fill="#26221D">Tarjeta ilustrativa de Alma Norel</text>
+<text x="300" y="736" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="15" fill="#5E574D">No es la portada oficial del libro</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Tarjeta ilustrativa de Alma Norel para Hábitos atómicos, de James Clear">
+<title>Tarjeta ilustrativa de Alma Norel: Hábitos atómicos (James Clear). No es la portada oficial del libro.</title>
+<rect width="600" height="800" fill="#FFF6E5"/>
+<rect x="24" y="24" width="552" height="752" rx="28" fill="#E3F1DD" stroke="#EADFC8" stroke-width="3"/>
+<text x="300" y="70" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="3" fill="#C8553D">ALMA NOREL · RUTA DE LECTURA</text>
+<text x="300" y="120" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-size="50" font-weight="700" fill="#2F6B3F">Hábitos</text><text x="300" y="178" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-size="50" font-weight="700" fill="#2F6B3F">atómicos</text>
+<text x="300" y="246" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-style="italic" font-size="28" fill="#5E574D">James Clear</text>
+<g transform="translate(0,40)"><rect x="150" y="522" width="40" height="38" rx="8" fill="#5FA55A"/><rect x="202" y="484" width="40" height="76" rx="8" fill="#2E7D4F"/><rect x="254" y="446" width="40" height="114" rx="8" fill="#2F6B3F"/><rect x="306" y="408" width="40" height="152" rx="8" fill="#245732"/><rect x="358" y="370" width="40" height="190" rx="8" fill="#C8553D"/><rect x="410" y="332" width="40" height="228" rx="8" fill="#E9B949"/><circle cx="174" cy="505" r="9" fill="#C8553D"/><text x="300" y="595" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="22" fill="#5E574D">1 % cada día</text></g>
+<rect x="60" y="690" width="480" height="56" rx="16" fill="#FFFBF3" stroke="#EADFC8"/>
+<text x="300" y="714" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="17" font-weight="700" fill="#26221D">Tarjeta ilustrativa de Alma Norel</text>
+<text x="300" y="736" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="15" fill="#5E574D">No es la portada oficial del libro</text>
+</svg>
