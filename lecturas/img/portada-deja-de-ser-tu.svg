@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Tarjeta ilustrativa de Alma Norel para Deja de ser tú, de Joe Dispenza">
+<title>Tarjeta ilustrativa de Alma Norel: Deja de ser tú (Joe Dispenza). No es la portada oficial del libro.</title>
+<rect width="600" height="800" fill="#FFF6E5"/>
+<rect x="24" y="24" width="552" height="752" rx="28" fill="#DDF0EC" stroke="#EADFC8" stroke-width="3"/>
+<text x="300" y="70" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="3" fill="#C8553D">ALMA NOREL · RUTA DE LECTURA</text>
+<text x="300" y="120" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-size="50" font-weight="700" fill="#245732">Deja de ser tú</text>
+<text x="300" y="188" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-style="italic" font-size="28" fill="#5E574D">Joe Dispenza</text>
+<g transform="translate(0,40)"><path d="M300 450 C240 350 140 360 160 440 C175 500 260 480 300 450 Z" fill="#C8553D"/><path d="M300 450 C360 350 460 360 440 440 C425 500 340 480 300 450 Z" fill="#E9B949"/><path d="M300 455 C260 500 200 540 230 570 C260 590 290 520 300 460 Z" fill="#D9694B"/><path d="M300 455 C340 500 400 540 370 570 C340 590 310 520 300 460 Z" fill="#F3B9A0"/><rect x="294" y="400" width="12" height="130" rx="6" fill="#26221D"/><path d="M300 405 C290 380 280 370 270 365 M300 405 C310 380 320 370 330 365" stroke="#26221D" stroke-width="3" fill="none"/></g>
+<rect x="60" y="690" width="480" height="56" rx="16" fill="#FFFBF3" stroke="#EADFC8"/>
+<text x="300" y="714" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="17" font-weight="700" fill="#26221D">Tarjeta ilustrativa de Alma Norel</text>
+<text x="300" y="736" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="15" fill="#5E574D">No es la portada oficial del libro</text>
+</svg>

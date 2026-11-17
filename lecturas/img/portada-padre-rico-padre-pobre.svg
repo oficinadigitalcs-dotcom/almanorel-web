@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Tarjeta ilustrativa de Alma Norel para Padre rico, padre pobre, de Robert Kiyosaki">
+<title>Tarjeta ilustrativa de Alma Norel: Padre rico, padre pobre (Robert Kiyosaki). No es la portada oficial del libro.</title>
+<rect width="600" height="800" fill="#FFF6E5"/>
+<rect x="24" y="24" width="552" height="752" rx="28" fill="#FDE6DA" stroke="#EADFC8" stroke-width="3"/>
+<text x="300" y="70" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="3" fill="#C8553D">ALMA NOREL · RUTA DE LECTURA</text>
+<text x="300" y="120" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-size="50" font-weight="700" fill="#9E3B26">Padre rico,</text><text x="300" y="178" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-size="50" font-weight="700" fill="#9E3B26">padre pobre</text>
+<text x="300" y="246" text-anchor="middle" font-family="Georgia,'Iowan Old Style','Palatino Linotype','Book Antiqua',serif" font-style="italic" font-size="28" fill="#5E574D">Robert Kiyosaki</text>
+<g transform="translate(0,40)"><path d="M300 600 C300 520 300 500 300 470 C300 430 200 400 160 330" fill="none" stroke="#C8553D" stroke-width="16" stroke-linecap="round"/><path d="M300 470 C300 430 400 400 440 330" fill="none" stroke="#2F6B3F" stroke-width="16" stroke-linecap="round"/><circle cx="160" cy="320" r="16" fill="#C8553D"/><circle cx="440" cy="320" r="16" fill="#2F6B3F"/></g>
+<rect x="60" y="690" width="480" height="56" rx="16" fill="#FFFBF3" stroke="#EADFC8"/>
+<text x="300" y="714" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="17" font-weight="700" fill="#26221D">Tarjeta ilustrativa de Alma Norel</text>
+<text x="300" y="736" text-anchor="middle" font-family="Nunito,'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif" font-size="15" fill="#5E574D">No es la portada oficial del libro</text>
+</svg>
