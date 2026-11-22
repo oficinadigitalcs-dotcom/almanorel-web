@@ -57,7 +57,7 @@ nav.toc li:nth-child(2) a:hover{background:var(--terra-dark);border-color:var(--
 /* Secciones */
 main section{margin:2rem 0;scroll-margin-top:1rem}
 .card{position:relative;transition:box-shadow .2s,transform .2s;background:var(--card);border-radius:var(--radius);padding:1.6rem 1.35rem;border:1px solid var(--line);border-top:7px solid var(--green);box-shadow:0 3px 0 rgba(234,223,200,.9),0 12px 28px rgba(38,34,29,.06)}
-#ardi.card,#contacto.card{border-top-color:var(--terra)}
+#ardi.card,#contacto.card,#libros.card{border-top-color:var(--terra)}
 h2{font-family:var(--font-title);font-weight:700;font-size:clamp(1.55rem,5.8vw,2.1rem);line-height:1.2;margin:0 0 .8rem;color:var(--green)}
 main p{margin:0 0 .9rem}
 .card:hover{box-shadow:0 3px 0 rgba(234,223,200,.9),0 16px 34px rgba(38,34,29,.10)}
