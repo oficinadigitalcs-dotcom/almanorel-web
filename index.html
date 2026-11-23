@@ -13,6 +13,13 @@
   <meta name="p:domain_verify" content="a8ac4bedf1becfac412c92e0a3c39682"/>
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css">
+  <style>
+  .home-gratis{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem;margin:1rem 0}
+  .home-gratis a{display:block;text-decoration:none;color:var(--ink);font-weight:700;font-size:.9rem;text-align:center;line-height:1.35}
+  .home-gratis img{width:100%;height:auto;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.1);margin-bottom:.35rem}
+  .home-links{padding-left:1.1rem}
+  @media (max-width:560px){.home-gratis{grid-template-columns:1fr 1fr}}
+  </style>
 </head>
 <body>
   <main class="wrap" style="padding:3rem 1.25rem;text-align:center">
@@ -21,6 +28,30 @@
     <a href="/cuentos/ardi-y-la-casita-secreta.html"><img class="home-cover" src="https://m.media-amazon.com/images/I/91RUyeTDWTL._SL1500_.jpg" width="1050" height="1500" decoding="async" alt="Portada de «Ardi y la casita secreta», de Alma Norel" style="display:block;width:100%;max-width:220px;height:auto;margin:1.2rem auto;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.12)"></a>
     <p><a class="btn go" href="https://www.amazon.es/dp/B0HMS285GQ?tag=almanorel-21" target="_blank" rel="sponsored noopener">Comprar en Amazon</a></p>
     <nav class="doors doors-home" aria-label="Secciones principales"><a href="/cuentos/">Cuentos para Imaginar</a><a href="/lecturas/">Lecturas para tu camino</a><a href="/blog/">Blog</a></nav>
+    <section class="card" aria-labelledby="personalizado-home" style="max-width:34rem;margin:1.5rem auto;background:var(--green-soft);border:1.5px solid var(--green)">
+      <p class="badge">Regalo</p>
+      <h2 id="personalizado-home" style="font-family:var(--font-title);font-weight:normal;color:var(--green)">Cuentos personalizados: un regalo con su propia historia</h2>
+      <p>Un cuento en vídeo, con una canción con su nombre, donde tu peque, o dos hermanos, son los protagonistas. Tres modalidades, desde 34,90 € (IVA incluido).</p>
+      <p><a class="btn go" href="/cuento-personalizado/">Descubre las opciones</a></p>
+      <p><a href="/cuentos/#para-leer"><strong>Cuentos gratis para escuchar y descargar →</strong></a></p>
+    </section>
+    <section class="card" aria-labelledby="gratis-home" style="max-width:46rem;margin:1.5rem auto;text-align:left">
+      <p class="badge">Gratis</p>
+      <h2 id="gratis-home" style="font-family:var(--font-title);font-weight:normal;color:var(--green);text-align:center">Para leer, escuchar y colorear, gratis</h2>
+      <div class="home-gratis">
+        <a href="/cuentos/por-que-los-osos-tienen-la-cola-corta.html"><img src="/assets/img/cuentos/osos/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">¿Por qué los osos tienen la cola corta? <small>· con audio</small></a>
+        <a href="/cuentos/la-lluvia-de-brinca-saltica-y-pluma.html"><img src="/assets/img/cuentos/brinca/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">La lluvia de Brinca, Sáltica y Pluma</a>
+        <a href="/cuentos/el-leon-y-el-raton.html"><img src="/assets/img/cuentos/raton/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">El león y el ratón</a>
+        <a href="/cuentos/el-leon-y-el-jabali.html"><img src="/assets/img/cuentos/jabali/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">El león y el jabalí</a>
+      </div>
+      <ul class="home-links">
+        <li><a href="/laminas-ardi/"><strong>Veinte láminas de Ardi para colorear</strong></a>, en A4 para imprimir.</li>
+        <li><a href="/blog/leer-en-voz-alta.html"><strong>Leer en voz alta en casa</strong></a>: el ratito que se queda con nosotros.</li>
+        <li><a href="/blog/preparar-peque-dentista-sin-miedo.html"><strong>Preparar a tu peque para el dentista sin miedo</strong></a>.</li>
+        <li><a href="/blog/el-miedo-lo-que-traemos-al-nacer-1.html"><strong>El miedo: lo que traemos al nacer</strong></a>.</li>
+      </ul>
+      <p style="text-align:center"><a class="btn go" href="/cuentos/">Todos los cuentos gratis</a></p>
+    </section>
     <section class="card" aria-labelledby="blog-nueva" style="max-width:28rem;margin-left:auto;margin-right:auto">
       <p class="badge">Nueva entrada del blog</p>
       <h2 id="blog-nueva">Cómo preparar a tu peque para el dentista sin miedo</h2>

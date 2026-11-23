@@ -44,6 +44,10 @@
   @media (min-width:760px){
     .laminas-grid{grid-template-columns:1fr 1fr;align-items:end}
   }
+  .audio-box{margin:1.2rem 0 1.6rem;padding:1.1rem 1.2rem 1.3rem;border:1px solid var(--line);border-radius:18px;background:#fff;text-align:center}
+  .audio-box h2{margin-top:0}
+  .audio-box p{max-width:36rem;margin-left:auto;margin-right:auto}
+  .audio-box audio{width:100%;max-width:28rem;margin:.5rem auto 1rem;display:block}
   </style>
 </head>
 <body>
@@ -54,7 +58,7 @@
       <p class="brand-kicker">Alma Norel</p>
       <h1>El león y el ratón</h1>
       <p class="subtitle">Adaptación de la fábula tradicional</p>
-      <nav class="toc" aria-label="Secciones"><ul><li><a href="/cuentos/">Los cuentos</a></li><li><a href="#descarga">Descargar</a></li><li><a href="#cuento">Leer el cuento</a></li><li><a href="#laminas">Láminas</a></li><li><a href="/blog/">Blog</a></li><li><a href="/cuentos/#contacto">Contacto</a></li></ul></nav>
+      <nav class="toc" aria-label="Secciones"><ul><li><a href="/cuentos/">Los cuentos</a></li><li><a href="#audio">Escuchar</a></li><li><a href="#descarga">Descargar</a></li><li><a href="#cuento">Leer el cuento</a></li><li><a href="#laminas">Láminas</a></li><li><a href="/blog/">Blog</a></li><li><a href="/cuentos/#contacto">Contacto</a></li></ul></nav>
     </div>
   </header>
   <main id="contenido" class="wrap">
@@ -68,6 +72,18 @@
 
       <div id="descarga" class="lamina-download">
         <a class="btn" href="/cuentos/raton/El_leon_y_el_raton.pdf" download="El_leon_y_el_raton.pdf">El cuento entero + una página para dibujar, gratis 👉 Descargar</a>
+      </div>
+
+      <div id="audio" class="audio-box">
+        <h2>Escucha el cuento</h2>
+        <p>La lectura completa, de unos seis minutos. Pulsa reproducir o descárgala gratis para la hora de dormir.</p>
+        <audio controls preload="metadata">
+          <source src="/cuentos/raton/El_leon_y_el_raton.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir el audio. <a href="/cuentos/raton/El_leon_y_el_raton.mp3">Descarga el cuento en audio</a>.
+        </audio>
+        <div class="lamina-download" style="margin:0">
+          <a class="btn" href="/cuentos/raton/El_leon_y_el_raton.mp3" download="El_leon_y_el_raton.mp3">El cuento en audio, gratis 👉 Descargar</a>
+        </div>
       </div>
 
       <div id="cuento" class="cuento">
