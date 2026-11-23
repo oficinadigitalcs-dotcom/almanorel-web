@@ -25,6 +25,15 @@
   .audio-lista{margin:.9rem 0 0;padding:.8rem 1rem;border:1px solid var(--line);border-radius:16px;background:#fff}
   .audio-lista audio{width:100%;margin:.4rem 0 .2rem;display:block}
   .audio-lista p{margin:.2rem 0 0}
+  .audio-pronto{margin:.6rem 0 0}
+  .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0}
+  .mini-grid a{display:block;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;text-align:center}
+  .mini-grid img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:#fff;margin-bottom:.35rem}
+  .art-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1rem 0}
+  .art{display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:.9rem 1rem;text-decoration:none;color:var(--ink)}
+  .art strong{display:block;color:var(--green);margin-bottom:.2rem}
+  .art span{font-size:.92rem;color:var(--muted)}
+  @media (max-width:640px){.mini-grid{grid-template-columns:1fr 1fr}.art-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -52,6 +61,8 @@
         <ul>
           <li><a href="#los-cuentos">Los cuentos</a></li>
           <li><a href="#para-leer">Para leer y descargar</a></li>
+          <li><a href="#colorear">Para colorear</a></li>
+          <li><a href="#familias">Para familias</a></li>
           <li><a href="#libros">Libros a la venta</a></li>
           <li><a href="/cuento-personalizado/">Cuento personalizado</a></li>
           <li><a href="#autora">Sobre Alma</a></li>
@@ -96,6 +107,7 @@
           <div class="buttons">
             <p><a href="/cuentos/la-lluvia-de-brinca-saltica-y-pluma.html"><strong>Lee el cuento y descarga la ficha →</strong></a></p>
           </div>
+          <p class="audio-pronto"><span class="badge">Audio próximamente</span></p>
         </div>
       </div>
     </section>
@@ -138,6 +150,7 @@
           <div class="buttons">
             <p><a href="/cuentos/el-leon-y-el-raton.html"><strong>Lee el cuento y descarga la ficha →</strong></a></p>
           </div>
+          <p class="audio-pronto"><span class="badge">Audio próximamente</span></p>
         </div>
       </div>
     </section>
@@ -155,8 +168,40 @@
           <div class="buttons">
             <p><a href="/cuentos/el-leon-y-el-jabali.html"><strong>Lee el cuento y descarga la ficha →</strong></a></p>
           </div>
+          <p class="audio-pronto"><span class="badge">Audio próximamente</span></p>
         </div>
       </div>
+    </section>
+
+    <section id="colorear" class="card" aria-labelledby="colorear-t">
+      <span class="badge">Gratis</span>
+      <h2 id="colorear-t">Para colorear: láminas de Ardi</h2>
+      <p>Veinte láminas y fichas en A4 para imprimir y colorear, de descarga gratis: la casita secreta, las buenas noches, el otoño, juegos y hábitos (dientes, dormir, recoger juguetes…).</p>
+      <div class="mini-grid">
+        <a href="/laminas-ardi/#toc-toc-conoce-a-ardi"><img src="/laminas-ardi/toc-toc-conoce-a-ardi.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Toc, toc… Conoce a Ardi»">Toc, toc… Conoce a Ardi</a>
+        <a href="/laminas-ardi/#buenas-noches-pequena"><img src="/laminas-ardi/buenas-noches-pequena.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Buenas noches»">Buenas noches</a>
+        <a href="/laminas-ardi/#brinca-y-la-lluvia"><img src="/laminas-ardi/brinca-y-la-lluvia.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Brinca y la lluvia»">Brinca y la lluvia</a>
+        <a href="/laminas-ardi/#de-que-color-es-el-viento"><img src="/laminas-ardi/de-que-color-es-el-viento.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «¿De qué color es el viento?»">¿De qué color es el viento?</a>
+        <a href="/laminas-ardi/#ardi-baila"><img src="/laminas-ardi/ardi-baila.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Ardi baila»">Ardi baila</a>
+        <a href="/laminas-ardi/#ardi-y-sus-amigas"><img src="/laminas-ardi/ardi-y-sus-amigas.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Ardi y sus amigas»">Ardi y sus amigas</a>
+      </div>
+      <p><a href="/laminas-ardi/"><strong>Ver las veinte láminas →</strong></a></p>
+    </section>
+
+    <section id="familias" class="card" aria-labelledby="familias-t">
+      <span class="badge">Gratis</span>
+      <h2 id="familias-t">Para madres y padres: del blog</h2>
+      <p>Artículos para acompañar a los peques en casa.</p>
+      <div class="art-grid">
+        <a class="art" href="/blog/leer-en-voz-alta.html"><strong>Leer en voz alta en casa</strong><span>Ideas sencillas para leer cuentos en voz alta en familia, sin presión y con constancia.</span></a>
+        <a class="art" href="/blog/preparar-peque-dentista-sin-miedo.html"><strong>Cómo preparar a tu peque para el dentista sin miedo</strong><span>Qué hacer antes, durante y después de la cita, y qué frases ayudan.</span></a>
+        <a class="art" href="/blog/el-miedo-lo-que-traemos-al-nacer-1.html"><strong>El miedo: lo que traemos al nacer</strong><span>Los miedos con los que nacemos y los que aprendemos de tanto «cuidado».</span></a>
+        <a class="art" href="/blog/el-cuerpo-del-nino-tambien-habla.html"><strong>El cuerpo del niño también habla</strong><span>Lo que puede decir una rabieta, una cama mojada o un abrazo desesperado.</span></a>
+        <a class="art" href="/blog/deberes-no-perfectos.html"><strong>Los deberes no son para que salgan perfectos</strong><span>Cómo acompañar sin hacérselos: el deber es el proceso, no el resultado.</span></a>
+        <a class="art" href="/blog/pensamiento-critico-ninos.html"><strong>Pensamiento crítico en los peques</strong><span>Dar dos opciones, explicar el «no» y preguntar «¿tú qué piensas?».</span></a>
+        <a class="art" href="/blog/tablet-educacion-digital.html"><strong>¿Sí a la tablet o no a la tablet?</strong><span>A qué edad, para qué y con quién, y qué dicen los estudios.</span></a>
+      </div>
+      <p><a href="/blog/"><strong>Todo el blog →</strong></a> · Y para ti: <a href="/lecturas/empieza-aqui.html"><strong>Lecturas para tu camino, empieza aquí →</strong></a></p>
     </section>
 
     <!--
@@ -218,7 +263,7 @@
     <section id="cuento-personalizado" class="card" aria-labelledby="cuento-personalizado-t">
       <span class="badge">Producto propio</span>
       <h2 id="cuento-personalizado-t">Cuentos personalizados</h2>
-      <p>Un cuento en vídeo donde tu peque, o dos hermanos, son los protagonistas. Tres modalidades: con su nombre, con su personaje a partir de una foto o una historia nueva a medida. Desde 29,90 €.</p>
+      <p>Un cuento en vídeo donde tu peque, o dos hermanos, son los protagonistas. Tres modalidades, todas con una canción con su nombre: con su nombre, con su personaje a partir de una foto o una historia nueva a medida. Desde 29,90 € (IVA incluido).</p>
       <div class="buttons">
         <p><a href="/cuento-personalizado/"><strong>Ver la página del cuento personalizado →</strong></a></p>
       </div>
