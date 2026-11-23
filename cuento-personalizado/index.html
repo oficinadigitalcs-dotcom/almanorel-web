@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Un cuento de Navidad donde tu hijo es el protagonista · Alma Norel</title>
-  <meta name="description" content="Papá Noel ha perdido su lista… y solo tu pequeño puede ayudarle. Un vídeo animado de más de 3 minutos con su nombre, para verlo en familia.">
+  <title>Un cuento de Navidad donde tu peque es el protagonista · Alma Norel</title>
+  <meta name="description" content="Historias personalizadas para regalar recuerdos: un cuento en vídeo con el nombre de tu peque, o de dos hermanos. Con una canción con su nombre. Tres modalidades, desde 34,90 € (IVA incluido).">
   <link rel="canonical" href="https://almanorel.com/cuento-personalizado/">
   <meta name="theme-color" content="#2F6B3F">
-  <meta property="og:title" content="Un cuento de Navidad donde tu hijo es el protagonista · Alma Norel">
-  <meta property="og:description" content="Papá Noel ha perdido su lista… y solo tu pequeño puede ayudarle. Un vídeo animado de más de 3 minutos con su nombre, para verlo en familia.">
+  <meta property="og:title" content="Un cuento de Navidad donde tu peque es el protagonista · Alma Norel">
+  <meta property="og:description" content="Historias personalizadas para regalar recuerdos: un cuento en vídeo con el nombre de tu peque, o de dos hermanos. Con una canción con su nombre. Tres modalidades, desde 34,90 € (IVA incluido).">
   <meta property="og:url" content="https://almanorel.com/cuento-personalizado/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
@@ -19,88 +19,61 @@
   <link rel="stylesheet" href="/assets/style.css">
   <style>
   .btn.go::after{content:" →"}
-  .btn.is-soon,
-  .btn:disabled{
-    background:#8a8178;
-    box-shadow:none;
-    cursor:not-allowed;
-    pointer-events:none;
-  }
-  .btn.is-soon::after,
+  .btn.mail{background:var(--green)}
+  .btn.mail:hover{background:var(--green-dark)}
+  .btn.mail::after{content:""}
+  .btn:disabled{background:#8a8178;box-shadow:none;cursor:not-allowed}
   .btn:disabled::after{content:""}
-  .avance{
-    min-height:12rem;
-    aspect-ratio:16/9;
-    max-width:100%;
-    margin:1.2rem auto 1.4rem;
-    border:2px dashed var(--green);
-    border-radius:18px;
-    background:var(--green-soft);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:1.5rem;
-    color:var(--muted);
-  }
-  .avance strong{color:var(--green);display:block;margin-bottom:.35rem;font-size:1.05rem}
+  .banda-navidad{background:var(--night);color:#fff;border-radius:16px;padding:.8rem 1.1rem;margin:1.2rem 0 0;text-align:center;font-size:.98rem}
+  .banda-navidad strong{color:var(--star)}
+  .banda-navidad a{color:#fff;text-decoration-color:var(--star)}
+  .selector{display:flex;justify-content:center;gap:0;margin:1.2rem auto 1.6rem;border:2px solid var(--green);border-radius:999px;width:max-content;max-width:100%;overflow:hidden;background:#fff}
+  .sel-input{position:absolute;opacity:0;pointer-events:none}
+  .selector label{padding:.6rem 1.2rem;font-weight:800;cursor:pointer;color:var(--green);white-space:nowrap}
+  #prot-1:checked ~ .selector label[for=prot-1],
+  #prot-2:checked ~ .selector label[for=prot-2]{background:var(--green);color:#fff}
+  #prot-1:focus-visible ~ .selector label[for=prot-1],
+  #prot-2:focus-visible ~ .selector label[for=prot-2]{outline:3px solid var(--terra);outline-offset:-3px}
+  #prot-1:checked ~ .planes .solo-2,
+  #prot-2:checked ~ .planes .solo-1{display:none}
+  .planes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin:0 0 1rem}
+  .plan{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:1.2rem 1.15rem 1.3rem;display:flex;flex-direction:column}
+  .plan h3{margin:.3rem 0 .4rem;font-family:var(--font-title);font-weight:normal;color:var(--green);font-size:1.3rem;line-height:1.3}
+  .plan .letra{display:inline-block;width:2rem;height:2rem;border-radius:50%;background:var(--terra-dark);color:#fff;font-weight:800;text-align:center;line-height:2rem}
+  .plan .importe{font-size:1.7rem;font-weight:800;color:var(--ink);margin:.4rem 0 .1rem}
+  .plan .importe small{font-size:.9rem;font-weight:600;color:var(--muted)}
+  .plan ul{padding-left:1.1rem;margin:.4rem 0 .8rem;font-size:.98rem}
+  .plan .cta{margin-top:auto}
+  .plan .cta .btn{width:100%;text-align:center;font-size:1rem;padding:.75rem 1rem}
+  .plan .aviso{font-size:.9rem;color:var(--muted);margin:.5rem 0 0}
+  .muestra{border:2px dashed var(--green);border-radius:14px;background:var(--green-soft);padding:.9rem;margin:.6rem 0 .9rem;text-align:center;color:var(--muted);font-size:.92rem}
+  .muestra strong{display:block;color:var(--green)}
+  .muestra-video{margin:.6rem 0 .9rem;text-align:center}
+  .muestra-video video{width:100%;max-width:260px;aspect-ratio:9/16;height:auto;border-radius:14px;background:#000;display:block;margin:0 auto}
+  .muestra-video figcaption{font-size:.85rem;color:var(--muted);margin-top:.35rem}
+  .etiqueta{display:inline-block;font-size:.78rem;font-weight:800;background:var(--sun-soft);border:1px solid var(--sun);border-radius:999px;padding:.1rem .6rem;margin-bottom:.35rem;color:var(--ink)}
+  .cancion-muestra{margin:.2rem 0 .9rem;font-size:.9rem;text-align:center}
+  .cancion-muestra audio{width:100%;margin-top:.3rem}
+  .iva{display:block;font-size:.8rem;font-weight:600;color:var(--muted)}
+  .gratis-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1rem 0}
+  .gratis-grid a{display:block;text-decoration:none;color:var(--ink);font-weight:700;font-size:.95rem;text-align:center}
+  .gratis-grid img{width:100%;height:auto;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,.1);margin-bottom:.4rem}
+  .pedido .check{display:flex;gap:.6rem;align-items:flex-start;margin:.4rem 0 .8rem;font-weight:600;font-size:.92rem}
+  .pedido .check input{margin-top:.35rem;flex-shrink:0}
+  .ocasiones{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1rem 0}
+  .ocasion{background:var(--sun-soft);border-radius:16px;padding:.9rem 1rem}
+  .ocasion h3{margin:0 0 .3rem;font-size:1.05rem;color:var(--ink)}
+  .ocasion p{margin:0;font-size:.95rem}
   .steps{list-style:none;padding:0;margin:1rem 0 1.4rem;counter-reset:paso}
-  .steps li{
-    position:relative;
-    padding:.55rem 0 .55rem 3.2rem;
-    counter-increment:paso;
-  }
-  .steps li::before{
-    content:counter(paso);
-    position:absolute;
-    left:0;
-    top:.45rem;
-    width:2.15rem;
-    height:2.15rem;
-    border-radius:50%;
-    background:var(--green);
-    color:#fff;
-    font-weight:800;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:1rem;
-  }
-  .precio{font-size:1.12rem}
-  .note-soon{
-    background:var(--sun-soft);
-    border:1.5px solid var(--sun);
-    border-radius:14px;
-    padding:.9rem 1rem;
-    margin:1rem 0 1.3rem;
-  }
-  .pedido label{display:block;font-weight:700;margin:0.85rem 0 .3rem}
-  .pedido .opciones{display:flex;flex-wrap:wrap;gap:1rem;margin:.3rem 0 0;font-weight:700}
-  .pedido .opciones label{display:flex;align-items:center;gap:.4rem;margin:0;font-weight:700}
-  .pedido input[type=text]{
-    width:100%;
-    max-width:28rem;
-    padding:.7rem .9rem;
-    border:2px solid var(--line);
-    border-radius:12px;
-    font:inherit;
-    background:#f3eee4;
-    color:var(--muted);
-  }
-  .pedido .check{
-    display:flex;
-    gap:.7rem;
-    align-items:flex-start;
-    margin:1.3rem 0 1rem;
-    font-weight:600;
-  }
-  .pedido .check input{margin-top:.4rem;flex-shrink:0}
-  .pedido .acciones{margin:1.2rem 0 .4rem}
+  .steps li{position:relative;padding:.55rem 0 .55rem 3.2rem;counter-increment:paso}
+  .steps li::before{content:counter(paso);position:absolute;left:0;top:.45rem;width:2.15rem;height:2.15rem;border-radius:50%;background:var(--green);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1rem}
+  .contacto-box{background:var(--green-soft);border-radius:18px;padding:1.1rem 1.2rem;text-align:center}
   .faq details{border-top:1px solid var(--line);padding:.85rem 0}
   .faq details:first-of-type{border-top:0}
   .faq summary{font-weight:800;cursor:pointer;color:var(--green)}
   .faq details p{margin:.55rem 0 0}
+  @media (max-width:860px){.planes{grid-template-columns:1fr}}
+  @media (max-width:560px){.ocasiones{grid-template-columns:1fr}.gratis-grid{grid-template-columns:1fr 1fr}.selector label{padding:.55rem .85rem;font-size:.95rem}}
   </style>
 </head>
 <body>
@@ -109,73 +82,183 @@
     <nav class="doors" aria-label="Secciones principales"><a href="/cuentos/">Cuentos para Imaginar</a><a href="/lecturas/">Lecturas para tu camino</a></nav>
     <div class="wrap">
       <p class="brand-kicker">Alma Norel</p>
-      <h1>Un cuento de Navidad donde tu hijo es el protagonista</h1>
-      <p class="subtitle">Papá Noel ha perdido su lista… y solo tu pequeño puede ayudarle. Un vídeo animado de más de 3 minutos con su nombre, para verlo en familia.</p>
+      <!-- TÍTULO DE TEMPORADA hasta el 6 de enero. Después, volver a «Historias personalizadas para regalar recuerdos» como título principal. -->
+      <h1>Un cuento de Navidad donde tu peque es el protagonista</h1>
+      <p class="subtitle"><strong>Historias personalizadas para regalar recuerdos.</strong> Un cuento en vídeo, con una canción con su nombre, donde tu peque, o dos hermanos, son los protagonistas.</p>
+      <p class="banda-navidad"><strong>Navidad y Reyes:</strong> si lo quieres para una fecha concreta, <a href="mailto:hola@almanorel.com?subject=Consulta%20cuento%20personalizado">escríbenos antes de pedirlo</a> y te confirmamos si llegamos a tiempo.</p>
       <nav class="toc" aria-label="Secciones">
         <ul>
+          <li><a href="#modalidades">Modalidades y precios</a></li>
           <li><a href="#como-funciona">Cómo funciona</a></li>
-          <li><a href="#pedir">Pedir el cuento</a></li>
+          <li><a href="#ocasiones">Ocasiones</a></li>
           <li><a href="#preguntas">Preguntas frecuentes</a></li>
-          <li><a href="/cuentos/">Los cuentos</a></li>
-          <li><a href="/blog/">Blog</a></li>
-          <li><a href="/cuentos/#contacto">Contacto</a></li>
+          <li><a href="#gratis">Cuentos gratis</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="contenido" class="wrap">
-    <article class="card post">
-      <!-- No subir fotos ni vídeos de niños reales. El hueco del avance se oculta hasta haber una muestra con un nombre corriente. -->
+    <!-- PRIVACIDAD: no subir fotos ni vídeos de niños reales a este repositorio público. Las muestras solo con personajes ficticios y derechos validados. -->
+    <!-- COBROS: todas las modalidades van por correo hasta que Nicol valide enlaces de pago con los precios actuales. -->
 
-      <section id="como-funciona" aria-labelledby="como-t">
-        <h2 id="como-t">Cómo funciona</h2>
-        <ol class="steps">
-          <li>Paga de forma segura. Al pagar te pediremos el nombre y la edad del niño o la niña.</li>
-          <li>Te escribiremos en 24-48 horas para confirmar los detalles.</li>
-          <li>Recibirás el enlace para descargar su cuento.</li>
-        </ol>
-        <p class="precio"><strong>Precio de lanzamiento: 29,90 €</strong> hasta el 30 de noviembre. <strong>Entrega garantizada antes del 22 de diciembre</strong> para pedidos hechos hasta el 18.</p>
-      </section>
+    <section id="modalidades" class="card" aria-labelledby="modalidades-t">
+      <h2 id="modalidades-t">Elige cómo quieres su cuento</h2>
+      <p>Tres modalidades, para un protagonista o para dos hermanos. <strong>Todas incluyen una canción con su nombre.</strong> El precio de dos hermanos no es el doble: refleja el trabajo añadido de incluir al segundo protagonista.</p>
 
-      <section id="pedir" aria-labelledby="pedir-t">
-        <h2 id="pedir-t">Pedir el cuento</h2>
-        <form class="pedido" id="form-pedido" action="https://buy.stripe.com/eVq9AT3XQ1Hee6F43HdfG00" method="get">
-          <label class="check" for="acepto">
-            <input id="acepto" type="checkbox" required>
-            <span>Acepto que es un producto personalizado sin derecho de desistimiento y que se crea con IA.</span>
-          </label>
-          <p class="acciones">
-            <button class="btn go" type="submit" id="btn-pagar">Pagar 29,90 €</button>
+      <input class="sel-input" type="radio" name="protagonistas" id="prot-1" checked>
+      <input class="sel-input" type="radio" name="protagonistas" id="prot-2">
+      <div class="selector" role="group" aria-label="Número de protagonistas">
+        <label for="prot-1">1 protagonista</label>
+        <label for="prot-2">2 hermanos</label>
+      </div>
+
+      <div class="planes">
+        <article class="plan" aria-labelledby="plan-a-t">
+          <span class="letra" aria-hidden="true">A</span>
+          <h3 id="plan-a-t">Historia de catálogo con su nombre</h3>
+          <figure class="muestra-video">
+            <span class="etiqueta">Ejemplo real, con permiso de su familia</span>
+            <video src="/assets/video/muestras/muestra-a-bea.mp4" poster="/assets/video/muestras/muestra-a-bea.jpg" width="540" height="960" muted autoplay loop playsinline controls preload="metadata" aria-label="Muestra de 15 segundos: el cuento de Navidad de Bea"></video>
+            <figcaption>15 s del cuento de Bea. Toca el altavoz para oír su nombre.</figcaption>
+          </figure>
+          <p class="cancion-muestra">Escucha la canción de Bea: cada peque tiene la suya, con su nombre 🎶
+            <audio controls preload="none" src="/assets/audio/muestras/cancion-bea-estribillo.mp3" aria-label="Estribillo de la canción de Bea"></audio>
           </p>
-          <p>Al pagar te pediremos el nombre y la edad del niño o la niña. Te escribiremos en 24-48 horas para confirmar los detalles.</p>
-        </form>
-      </section>
+          <ul>
+            <li>Un cuento animado ya escrito (ahora, el de Navidad: Papá Noel ha perdido su lista), narrado en vídeo de más de 3 minutos.</li>
+            <li>Cambiamos el nombre del protagonista<span class="solo-2"> por los de los dos hermanos</span>; dedicatoria cuando sea técnicamente posible.</li>
+            <li>No hace falta foto. El protagonista es un personaje animado, no su cara.</li>
+            <li><strong>Una canción con su nombre</strong> (MP3 para descargar).</li>
+          </ul>
+          <p class="importe solo-1">34,90 € <small>· 1 protagonista</small><span class="iva">IVA incluido</span></p>
+          <p class="importe solo-2">44,90 € <small>· 2 hermanos</small><span class="iva">IVA incluido</span></p>
+          <div class="cta">
+            <a class="btn mail" href="mailto:hola@almanorel.com?subject=Consulta%20cuento%20personalizado">Solicitar cuento personalizado</a>
+            <p class="aviso">Escríbenos con el nombre<span class="solo-2"> de los dos hermanos</span> y te confirmamos plazo y forma de pago antes de cualquier cobro.</p>
+          </div>
+        </article>
 
-      <section id="preguntas" class="faq" aria-labelledby="faq-t">
-        <h2 id="faq-t">Preguntas frecuentes</h2>
-        <details>
-          <summary>¿Sale la cara de mi hijo?</summary>
-          <p>En esta versión, el protagonista es un personaje animado y el nombre es el de tu hijo.</p>
-        </details>
-        <details>
-          <summary>¿Está hecho con IA?</summary>
-          <p>Sí: la animación y las voces se crean con inteligencia artificial y las revisamos a mano.</p>
-        </details>
-        <details>
-          <summary>¿Puedo devolverlo?</summary>
-          <p>Al ser un producto personalizado no tiene derecho de desistimiento, pero si hay un error en el nombre lo corregimos gratis.</p>
-        </details>
-      </section>
+        <article class="plan" aria-labelledby="plan-b-t">
+          <span class="letra" aria-hidden="true">B</span>
+          <h3 id="plan-b-t">Historia de catálogo con su personaje a partir de una foto</h3>
+          <div class="muestra"><strong>Ejemplo en preparación</strong>Pondremos una pieza breve cuando esté lista.</div>
+          <ul>
+            <li>Un cuento ya escrito, adaptado para que el protagonista<span class="solo-2"> y su hermano o hermana</span> se parezcan a la foto que nos envíes.</li>
+            <li>No es un avatar genérico: revisamos el parecido escena a escena.</li>
+            <li><strong>Una canción con su nombre</strong> (MP3 para descargar).</li>
+            <li>La foto se pide más adelante y por un canal seguro, nunca como primer paso.</li>
+          </ul>
+          <p class="importe solo-1">64,90 € <small>· 1 protagonista</small><span class="iva">IVA incluido</span></p>
+          <p class="importe solo-2">84,90 € <small>· 2 hermanos</small><span class="iva">IVA incluido</span></p>
+          <div class="cta">
+            <a class="btn mail" href="mailto:hola@almanorel.com?subject=Consulta%20cuento%20personalizado">Solicitar cuento personalizado</a>
+            <p class="aviso">Por encargo. Te confirmamos disponibilidad, duración, revisiones incluidas y plazo antes de cualquier pago.</p>
+          </div>
+        </article>
 
-      <p><a href="/cuentos/">← Volver a los cuentos</a></p>
-    </article>
+        <article class="plan" aria-labelledby="plan-c-t">
+          <span class="letra" aria-hidden="true">C</span>
+          <h3 id="plan-c-t">Historia nueva creada a medida</h3>
+          <div class="muestra"><strong>Ejemplo en preparación</strong>Pondremos una pieza breve con personajes ficticios cuando exista.</div>
+          <ul>
+            <li>Guion nuevo y vídeo exclusivo: tema, protagonistas, escenas y ocasión pensados para tu familia.</li>
+            <li>Incluye una revisión del encargo dentro de unos límites que acordamos antes de empezar.</li>
+            <li><strong>Una canción con su nombre</strong> (MP3 para descargar).</li>
+            <li>Ideal para cumpleaños, Reyes o un momento especial.</li>
+          </ul>
+          <p class="importe solo-1">134,90 € <small>· 1 protagonista</small><span class="iva">IVA incluido</span></p>
+          <p class="importe solo-2">174,90 € <small>· 2 hermanos</small><span class="iva">IVA incluido</span></p>
+          <div class="cta">
+            <a class="btn mail" href="mailto:hola@almanorel.com?subject=Consulta%20cuento%20personalizado">Solicitar cuento personalizado</a>
+            <p class="aviso">Bajo disponibilidad. Confirmamos plazo y alcance por correo antes del pago.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="card" aria-labelledby="como-t">
+      <h2 id="como-t">Cómo funciona</h2>
+      <ol class="steps">
+        <li>Nos escribes con la modalidad que quieres y te confirmamos disponibilidad, plazo y forma de pago antes de pagar.</li>
+        <li>Te escribimos en 24-48 horas para confirmar los detalles: nombre(s), ocasión y edad aproximada si cambia algo del cuento.</li>
+        <li>Solo en B y C: te explicamos cómo enviarnos la foto de forma segura. Se usa únicamente para hacer tu pedido y se borra al terminar.</li>
+        <li>Recibes el enlace para descargar su cuento y su canción con su nombre (MP3).</li>
+      </ol>
+      <p><strong>Plazo orientativo:</strong> 2-4 días laborables desde el pago y la recepción correcta de los datos. Es un objetivo, no una garantía: en B y C, y en fechas con mucha demanda, te confirmamos el plazo antes de pagar.</p>
+    </section>
+
+    <section id="ocasiones" class="card" aria-labelledby="ocasiones-t">
+      <h2 id="ocasiones-t">Para qué ocasiones</h2>
+      <div class="ocasiones">
+        <div class="ocasion"><h3>Navidad y Reyes</h3><p>El cuento de Papá Noel está listo en la modalidad A. También a medida en C.</p></div>
+        <div class="ocasion"><h3>Cumpleaños</h3><p>Una historia nueva a medida (C). Escríbenos con la fecha.</p></div>
+        <div class="ocasion"><h3>Hermanos y familia</h3><p>Todas las modalidades admiten dos hermanos como protagonistas.</p></div>
+        <div class="ocasion"><h3>Otros momentos especiales</h3><p>Cuéntanos la idea por correo y te decimos si podemos hacerla.</p></div>
+      </div>
+    </section>
+
+    <section id="preguntas" class="card faq" aria-labelledby="faq-t">
+      <h2 id="faq-t">Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Sale la cara de mi hijo?</summary>
+        <p>En la modalidad A, no: el protagonista es un personaje animado con su nombre. En B y C, el personaje se basa en la foto que nos envíes.</p>
+      </details>
+      <details>
+        <summary>¿Qué hacéis con las fotos?</summary>
+        <p>Solo las pedimos en B y C, después del primer contacto y con el consentimiento de madre, padre o tutor. Se usan únicamente para hacer el pedido, no se publican nunca y se borran al entregarlo.</p>
+      </details>
+      <details>
+        <summary>¿Qué es la canción con su nombre?</summary>
+        <p>Todas las modalidades, para uno o para dos hermanos, incluyen una canción navideña donde suena su nombre, en MP3 para descargar y escuchar cuando queráis. Arriba puedes oír la de Bea.</p>
+      </details>
+      <details>
+        <summary>¿Está hecho con IA?</summary>
+        <p>Sí: la animación, las voces y la canción se crean con inteligencia artificial y las revisamos a mano.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto tarda?</summary>
+        <p>El objetivo es 2-4 días laborables desde el pago y la recepción de los datos. No lo garantizamos para una fecha concreta sin confirmarlo antes por correo.</p>
+      </details>
+      <details>
+        <summary>¿Puedo devolverlo?</summary>
+        <p>Es un contenido digital personalizado: una vez empezado con tu consentimiento, no admite desistimiento. Si hay un error en el nombre, lo corregimos gratis.</p>
+      </details>
+      <details>
+        <summary>¿Por qué dos hermanos no cuestan el doble?</summary>
+        <p>Porque la historia es la misma: el precio refleja solo el trabajo añadido de incluir al segundo protagonista.</p>
+      </details>
+    </section>
+
+    <section id="gratis" class="card" aria-labelledby="gratis-t">
+      <h2 id="gratis-t">Mientras tanto, cuentos gratis</h2>
+      <p>Para leer esta noche, escuchar o descargar, sin pagar nada.</p>
+      <div class="gratis-grid">
+        <a href="/cuentos/por-que-los-osos-tienen-la-cola-corta.html"><img src="/assets/img/cuentos/osos/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">¿Por qué los osos tienen la cola corta? · con audio</a>
+        <a href="/cuentos/la-lluvia-de-brinca-saltica-y-pluma.html"><img src="/assets/img/cuentos/brinca/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">La lluvia de Brinca, Sáltica y Pluma</a>
+        <a href="/cuentos/el-leon-y-el-raton.html"><img src="/assets/img/cuentos/raton/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">El león y el ratón</a>
+        <a href="/cuentos/el-leon-y-el-jabali.html"><img src="/assets/img/cuentos/jabali/portada.jpg" width="805" height="1200" loading="lazy" decoding="async" alt="">El león y el jabalí</a>
+      </div>
+      <p><a href="/laminas-ardi/"><strong>Láminas de Ardi para colorear, gratis →</strong></a> · <a href="/cuentos/"><strong>Todos los cuentos →</strong></a></p>
+    </section>
+
+    <section id="contacto" class="card contacto-box" aria-labelledby="contacto-t">
+      <h2 id="contacto-t">¿Dudas o una idea especial?</h2>
+      <p>Escríbenos para consultar disponibilidad, ideas, número de hermanos, un cumpleaños u otra celebración. No envíes fotos en el primer correo: te explicaremos cómo hacerlo de forma segura.</p>
+      <p><a class="btn mail" href="mailto:hola@almanorel.com?subject=Consulta%20cuento%20personalizado">Consultar por correo</a></p>
+      <p><a href="mailto:hola@almanorel.com">hola@almanorel.com</a></p>
+    </section>
+
+    <p><a href="/cuentos/">← Volver a los cuentos</a></p>
   </main>
 
   <footer class="site-footer">
     <div class="wrap">
       <p>© 2026 Alma Norel · Cuentos para Imaginar</p>
       <p>Sitio de Alma Norel. Los libros se venden en Amazon.</p>
+      <p><strong>Contacto:</strong> <a href="mailto:hola@almanorel.com">hola@almanorel.com</a></p>
+      <p><strong>Vendedor de los cuentos personalizados:</strong> ASSET TOKEN SOLUTIONS LLC (EE. UU.). Precios en euros, IVA incluido.</p>
       <p>Como afiliada de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
       <p><strong>Privacidad:</strong> esta web usa GoatCounter, una estadística de visitas sin cookies que no recoge datos personales ni rastrea a nadie entre webs.</p>
       <p>almanorel.com es un sitio de ASSET TOKEN SOLUTIONS LLC · 30 N Gould St Ste N, Sheridan, WY 82801 (EE. UU.)</p>
@@ -188,18 +271,6 @@
       </nav>
     </div>
   </footer>
-<script>
-(function () {
-  var casilla = document.getElementById("acepto");
-  var boton = document.getElementById("btn-pagar");
-  if (!casilla || !boton) return;
-  function actualizar() {
-    boton.disabled = !casilla.checked;
-  }
-  casilla.addEventListener("change", actualizar);
-  actualizar();
-})();
-</script>
 <script data-goatcounter="https://almanorel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

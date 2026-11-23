@@ -21,6 +21,20 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css">
+  <style>
+  .audio-lista{margin:.9rem 0 0;padding:.8rem 1rem;border:1px solid var(--line);border-radius:16px;background:#fff}
+  .audio-lista audio{width:100%;margin:.4rem 0 .2rem;display:block}
+  .audio-lista p{margin:.2rem 0 0}
+  .audio-pronto{margin:.6rem 0 0}
+  .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0}
+  .mini-grid a{display:block;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;text-align:center}
+  .mini-grid img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:#fff;margin-bottom:.35rem}
+  .art-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1rem 0}
+  .art{display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:.9rem 1rem;text-decoration:none;color:var(--ink)}
+  .art strong{display:block;color:var(--green);margin-bottom:.2rem}
+  .art span{font-size:.92rem;color:var(--muted)}
+  @media (max-width:640px){.mini-grid{grid-template-columns:1fr 1fr}.art-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
@@ -47,6 +61,8 @@
         <ul>
           <li><a href="#los-cuentos">Los cuentos</a></li>
           <li><a href="#para-leer">Para leer y descargar</a></li>
+          <li><a href="#colorear">Para colorear</a></li>
+          <li><a href="#familias">Para familias</a></li>
           <li><a href="#libros">Libros a la venta</a></li>
           <li><a href="/cuento-personalizado/">Cuento personalizado</a></li>
           <li><a href="#autora">Sobre Alma</a></li>
@@ -73,8 +89,9 @@
 
     <section id="para-leer" class="card intro" aria-labelledby="para-leer-t">
       <span class="badge">Gratis</span>
-      <h2 id="para-leer-t">Para leer y descargar</h2>
-      <p>Cuentos para leer en la web o en voz alta, con ficha y láminas para descargar. El de los osos también se puede escuchar y bajar en audio. Hay además <a href="/laminas-ardi/">láminas y fichas de Ardi para colorear</a>, de descarga gratis. El libro de Ardi no está en esta lista: lo encontrarás más abajo, en libros a la venta.</p>
+      <h2 id="para-leer-t">Biblioteca gratis: para leer, escuchar y descargar</h2>
+      <p>Cuentos gratis para leer en la web o en voz alta, con ficha y láminas para descargar. Los que tienen audio se pueden escuchar aquí mismo y bajar en MP3 para oírlos sin conexión. Hay además <a href="/laminas-ardi/">láminas y fichas de Ardi para colorear</a>, de descarga gratis. El libro de Ardi no está en esta lista: lo encontrarás más abajo, en libros a la venta.</p>
+      <p>¿Buscas un regalo? <a href="/cuento-personalizado/"><strong>Cuentos personalizados con su nombre →</strong></a></p>
     </section>
 
     <section id="lluvia-brinca" class="card" aria-labelledby="lluvia-brinca-t">
@@ -88,7 +105,15 @@
           <h2 id="lluvia-brinca-t">La lluvia de Brinca, Sáltica y Pluma</h2>
           <p>¿Qué cae del cielo sin hacerse daño? Tres amigas lo descubrirán… ¡mirando desde sitios distintos!</p>
           <div class="buttons">
-            <p><a href="/cuentos/la-lluvia-de-brinca-saltica-y-pluma.html"><strong>Lee el cuento y descarga la ficha →</strong></a></p>
+            <p><a href="/cuentos/la-lluvia-de-brinca-saltica-y-pluma.html"><strong>Lee el cuento, escúchalo y descarga la ficha →</strong></a></p>
+          </div>
+          <div class="audio-lista">
+            <span class="badge">Audio · 6 min</span>
+            <audio controls preload="none" aria-label="Escuchar «La lluvia de Brinca, Sáltica y Pluma»">
+              <source src="/cuentos/brinca/La_lluvia_de_Brinca_Saltica_y_Pluma.mp3" type="audio/mpeg">
+              Tu navegador no puede reproducir el audio. <a href="/cuentos/brinca/La_lluvia_de_Brinca_Saltica_y_Pluma.mp3">Descarga el cuento en audio</a>.
+            </audio>
+            <p><a href="/cuentos/brinca/La_lluvia_de_Brinca_Saltica_y_Pluma.mp3" download="La_lluvia_de_Brinca_Saltica_y_Pluma.mp3"><strong>Descargar MP3 (5,6 MB) ↓</strong></a></p>
           </div>
         </div>
       </div>
@@ -107,6 +132,14 @@
           <div class="buttons">
             <p><a href="/cuentos/por-que-los-osos-tienen-la-cola-corta.html"><strong>Lee el cuento, escúchalo y descarga la ficha →</strong></a></p>
           </div>
+          <div class="audio-lista">
+            <span class="badge">Audio · 6 min</span>
+            <audio controls preload="none" aria-label="Escuchar «¿Por qué los osos tienen la cola corta?»">
+              <source src="/cuentos/osos/Por_que_los_osos_tienen_la_cola_corta.mp3" type="audio/mpeg">
+              Tu navegador no puede reproducir el audio. <a href="/cuentos/osos/Por_que_los_osos_tienen_la_cola_corta.mp3">Descarga el cuento en audio</a>.
+            </audio>
+            <p><a href="/cuentos/osos/Por_que_los_osos_tienen_la_cola_corta.mp3" download="Por_que_los_osos_tienen_la_cola_corta.mp3"><strong>Descargar MP3 (5,8 MB) ↓</strong></a></p>
+          </div>
         </div>
       </div>
     </section>
@@ -122,7 +155,15 @@
           <h2 id="leon-raton-t">El león y el ratón</h2>
           <p>¿Qué puede hacer un ratón tan pequeñito por el rey de la selva? Más de lo que te imaginas.</p>
           <div class="buttons">
-            <p><a href="/cuentos/el-leon-y-el-raton.html"><strong>Lee el cuento y descarga la ficha →</strong></a></p>
+            <p><a href="/cuentos/el-leon-y-el-raton.html"><strong>Lee el cuento, escúchalo y descarga la ficha →</strong></a></p>
+          </div>
+          <div class="audio-lista">
+            <span class="badge">Audio · 6 min</span>
+            <audio controls preload="none" aria-label="Escuchar «El león y el ratón»">
+              <source src="/cuentos/raton/El_leon_y_el_raton.mp3" type="audio/mpeg">
+              Tu navegador no puede reproducir el audio. <a href="/cuentos/raton/El_leon_y_el_raton.mp3">Descarga el cuento en audio</a>.
+            </audio>
+            <p><a href="/cuentos/raton/El_leon_y_el_raton.mp3" download="El_leon_y_el_raton.mp3"><strong>Descargar MP3 (5,8 MB) ↓</strong></a></p>
           </div>
         </div>
       </div>
@@ -139,11 +180,58 @@
           <h2 id="leon-jabali-t">El león y el jabalí</h2>
           <p>Un león y un jabalí quieren beber del mismo charco. ¿Quién bebe primero? La respuesta te sorprenderá.</p>
           <div class="buttons">
-            <p><a href="/cuentos/el-leon-y-el-jabali.html"><strong>Lee el cuento y descarga la ficha →</strong></a></p>
+            <p><a href="/cuentos/el-leon-y-el-jabali.html"><strong>Lee el cuento, escúchalo y descarga la ficha →</strong></a></p>
+          </div>
+          <div class="audio-lista">
+            <span class="badge">Audio · 4 min</span>
+            <audio controls preload="none" aria-label="Escuchar «El león y el jabalí»">
+              <source src="/cuentos/jabali/El_leon_y_el_jabali.mp3" type="audio/mpeg">
+              Tu navegador no puede reproducir el audio. <a href="/cuentos/jabali/El_leon_y_el_jabali.mp3">Descarga el cuento en audio</a>.
+            </audio>
+            <p><a href="/cuentos/jabali/El_leon_y_el_jabali.mp3" download="El_leon_y_el_jabali.mp3"><strong>Descargar MP3 (4,0 MB) ↓</strong></a></p>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="colorear" class="card" aria-labelledby="colorear-t">
+      <span class="badge">Gratis</span>
+      <h2 id="colorear-t">Para colorear: láminas de Ardi</h2>
+      <p>Veinte láminas y fichas en A4 para imprimir y colorear, de descarga gratis: la casita secreta, las buenas noches, el otoño, juegos y hábitos (dientes, dormir, recoger juguetes…).</p>
+      <div class="mini-grid">
+        <a href="/laminas-ardi/#toc-toc-conoce-a-ardi"><img src="/laminas-ardi/toc-toc-conoce-a-ardi.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Toc, toc… Conoce a Ardi»">Toc, toc… Conoce a Ardi</a>
+        <a href="/laminas-ardi/#buenas-noches-pequena"><img src="/laminas-ardi/buenas-noches-pequena.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Buenas noches»">Buenas noches</a>
+        <a href="/laminas-ardi/#brinca-y-la-lluvia"><img src="/laminas-ardi/brinca-y-la-lluvia.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Brinca y la lluvia»">Brinca y la lluvia</a>
+        <a href="/laminas-ardi/#de-que-color-es-el-viento"><img src="/laminas-ardi/de-que-color-es-el-viento.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «¿De qué color es el viento?»">¿De qué color es el viento?</a>
+        <a href="/laminas-ardi/#ardi-baila"><img src="/laminas-ardi/ardi-baila.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Ardi baila»">Ardi baila</a>
+        <a href="/laminas-ardi/#ardi-y-sus-amigas"><img src="/laminas-ardi/ardi-y-sus-amigas.jpg" width="800" height="1132" loading="lazy" decoding="async" alt="Lámina para colorear «Ardi y sus amigas»">Ardi y sus amigas</a>
+      </div>
+      <p><a href="/laminas-ardi/"><strong>Ver las veinte láminas →</strong></a></p>
+    </section>
+
+    <section id="familias" class="card" aria-labelledby="familias-t">
+      <span class="badge">Gratis</span>
+      <h2 id="familias-t">Para madres y padres: del blog</h2>
+      <p>Artículos para acompañar a los peques en casa.</p>
+      <div class="art-grid">
+        <a class="art" href="/blog/leer-en-voz-alta.html"><strong>Leer en voz alta en casa</strong><span>Ideas sencillas para leer cuentos en voz alta en familia, sin presión y con constancia.</span></a>
+        <a class="art" href="/blog/preparar-peque-dentista-sin-miedo.html"><strong>Cómo preparar a tu peque para el dentista sin miedo</strong><span>Qué hacer antes, durante y después de la cita, y qué frases ayudan.</span></a>
+        <a class="art" href="/blog/el-miedo-lo-que-traemos-al-nacer-1.html"><strong>El miedo: lo que traemos al nacer</strong><span>Los miedos con los que nacemos y los que aprendemos de tanto «cuidado».</span></a>
+        <a class="art" href="/blog/el-cuerpo-del-nino-tambien-habla.html"><strong>El cuerpo del niño también habla</strong><span>Lo que puede decir una rabieta, una cama mojada o un abrazo desesperado.</span></a>
+        <a class="art" href="/blog/deberes-no-perfectos.html"><strong>Los deberes no son para que salgan perfectos</strong><span>Cómo acompañar sin hacérselos: el deber es el proceso, no el resultado.</span></a>
+        <a class="art" href="/blog/pensamiento-critico-ninos.html"><strong>Pensamiento crítico en los peques</strong><span>Dar dos opciones, explicar el «no» y preguntar «¿tú qué piensas?».</span></a>
+        <a class="art" href="/blog/tablet-educacion-digital.html"><strong>¿Sí a la tablet o no a la tablet?</strong><span>A qué edad, para qué y con quién, y qué dicen los estudios.</span></a>
+      </div>
+      <p><a href="/blog/"><strong>Todo el blog →</strong></a> · Y para ti: <a href="/lecturas/empieza-aqui.html"><strong>Lecturas para tu camino, empieza aquí →</strong></a></p>
+    </section>
+
+    <!--
+      PLANTILLA PARA NUEVOS CUENTOS GRATIS (añadir SOLO cuando Nicol entregue texto y MP3 reales; no inventar audios).
+      1. MP3 en /cuentos/<carpeta>/<Nombre_del_cuento>.mp3 y portada en /assets/img/cuentos/<carpeta>/portada.jpg (+ .webp).
+      2. Ficha individual /cuentos/<slug>.html copiando por-que-los-osos-tienen-la-cola-corta.html (lectura + reproductor + descarga).
+      3. Copiar la tarjeta de los osos aquí arriba (incluido el bloque .audio-lista) y cambiar rutas, títulos y duración.
+      4. Añadir la ficha al sitemap.xml.
+    -->
 
     <section id="libros" class="card intro" aria-labelledby="libros-t">
       <span class="badge">A la venta</span>
@@ -195,8 +283,8 @@
 
     <section id="cuento-personalizado" class="card" aria-labelledby="cuento-personalizado-t">
       <span class="badge">Producto propio</span>
-      <h2 id="cuento-personalizado-t">Cuento personalizado</h2>
-      <p>Un vídeo animado de Navidad de más de 3 minutos en el que tu peque es el protagonista, con su nombre. Precio de lanzamiento: 29,90 € hasta el 30 de noviembre.</p>
+      <h2 id="cuento-personalizado-t">Cuentos personalizados</h2>
+      <p>Un cuento en vídeo donde tu peque, o dos hermanos, son los protagonistas. Tres modalidades, todas con una canción con su nombre: con su nombre, con su personaje a partir de una foto o una historia nueva a medida. Desde 34,90 € (IVA incluido).</p>
       <div class="buttons">
         <p><a href="/cuento-personalizado/"><strong>Ver la página del cuento personalizado →</strong></a></p>
       </div>
