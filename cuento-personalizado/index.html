@@ -126,47 +126,29 @@
 
   <main id="contenido" class="wrap">
     <article class="card post">
-      <!-- No subir fotos de niños reales. No subir el vídeo de muestra de Emma en este PR: solo el hueco. -->
-      <div class="avance" role="img" aria-label="Hueco reservado para el avance en vídeo del cuento. El vídeo todavía no está subido.">
-        <strong>Avance del cuento</strong>
-        <span>Aquí irá el vídeo de muestra. Todavía no está subido.</span>
-      </div>
+      <!-- No subir fotos ni vídeos de niños reales. El hueco del avance se oculta hasta haber una muestra con un nombre corriente. -->
 
       <section id="como-funciona" aria-labelledby="como-t">
         <h2 id="como-t">Cómo funciona</h2>
         <ol class="steps">
-          <li>Elige niño o niña y dinos su nombre (y cómo se pronuncia).</li>
-          <li>Paga de forma segura.</li>
-          <li>En 24-48 h te llega el enlace para descargar su cuento.</li>
+          <li>Paga de forma segura. Al pagar te pediremos el nombre y la edad del niño o la niña.</li>
+          <li>Te escribiremos en 24-48 horas para confirmar los detalles.</li>
+          <li>Recibirás el enlace para descargar su cuento.</li>
         </ol>
-        <p class="precio"><strong>Precio y pedidos:</strong> muy pronto. <strong>Entrega garantizada antes del 22 de diciembre</strong> para pedidos hechos hasta el 18.</p>
+        <p class="precio"><strong>Precio de lanzamiento: 29,90 €</strong> hasta el 30 de noviembre. <strong>Entrega garantizada antes del 22 de diciembre</strong> para pedidos hechos hasta el 18.</p>
       </section>
 
       <section id="pedir" aria-labelledby="pedir-t">
         <h2 id="pedir-t">Pedir el cuento</h2>
-        <p class="note-soon">El formulario y el pago estarán listos en cuanto estén el enlace de pago y el formulario. Mientras tanto quedan a la vista, desactivados, con la casilla que hay que aceptar.</p>
-        <form class="pedido" action="#" method="post" aria-disabled="true">
-          <fieldset disabled>
-            <legend class="badge">Próximamente</legend>
-            <p>
-              <span id="genero-label"><strong>Elige:</strong></span>
-            </p>
-            <div class="opciones" role="radiogroup" aria-labelledby="genero-label">
-              <label><input type="radio" name="genero" value="nina" disabled> Niña</label>
-              <label><input type="radio" name="genero" value="nino" disabled> Niño</label>
-            </div>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="off" disabled placeholder="El nombre de tu peque">
-            <label for="pronunciacion">Cómo se pronuncia</label>
-            <input id="pronunciacion" name="pronunciacion" type="text" autocomplete="off" disabled placeholder="Si hace falta, dínoslo aquí">
-            <label class="check" for="acepto">
-              <input id="acepto" name="acepto" type="checkbox" required disabled>
-              <span>Acepto que es un producto personalizado sin derecho de desistimiento y que se crea con IA.</span>
-            </label>
-            <p class="acciones">
-              <button class="btn is-soon" type="button" disabled>Pagar · Próximamente</button>
-            </p>
-          </fieldset>
+        <form class="pedido" id="form-pedido" action="https://buy.stripe.com/eVq9AT3XQ1Hee6F43HdfG00" method="get">
+          <label class="check" for="acepto">
+            <input id="acepto" type="checkbox" required>
+            <span>Acepto que es un producto personalizado sin derecho de desistimiento y que se crea con IA.</span>
+          </label>
+          <p class="acciones">
+            <button class="btn go" type="submit" id="btn-pagar">Pagar 29,90 €</button>
+          </p>
+          <p>Al pagar te pediremos el nombre y la edad del niño o la niña. Te escribiremos en 24-48 horas para confirmar los detalles.</p>
         </form>
       </section>
 
@@ -206,6 +188,18 @@
       </nav>
     </div>
   </footer>
+<script>
+(function () {
+  var casilla = document.getElementById("acepto");
+  var boton = document.getElementById("btn-pagar");
+  if (!casilla || !boton) return;
+  function actualizar() {
+    boton.disabled = !casilla.checked;
+  }
+  casilla.addEventListener("change", actualizar);
+  actualizar();
+})();
+</script>
 <script data-goatcounter="https://almanorel.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
